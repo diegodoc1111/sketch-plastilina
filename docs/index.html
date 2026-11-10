@@ -90,6 +90,16 @@
   .once { gap: 6px; } .once .ronda { padding: 8px 12px; gap: 10px; font-size: 15px; line-height: 1.45; }
   .once .ronda .n { font-size: 17px; width: 22px; line-height: 1.5; color: var(--terra-osc); font-weight: 700; }
 </style>
+<style>
+  .forma { margin: 0 0 22px; padding: 18px 18px 16px; background: #fff; border: 1px solid var(--linea); border-radius: 18px; }
+  .forma h3 { margin: 0 0 6px; font: 400 26px/1.15 var(--serif); color: var(--tinta); }
+  .forma h3 b { font: 700 14px/1 var(--mono); color: #fff; background: var(--terra); border-radius: 999px; padding: 5px 10px; margin-right: 8px; vertical-align: 4px; }
+  .forma p { margin: 0 0 10px; }
+  .chip { display: inline-block; font: 600 12px/1 var(--mono); letter-spacing: .04em; color: var(--tinta); background: #fff; border: 1px solid var(--linea); border-radius: 999px; padding: 6px 10px; margin: 4px 6px 0 0; }
+  .tabla { width: 100%; border-collapse: collapse; margin: 10px 0 0; font-size: 15px; background: #fff; border-radius: 12px; overflow: hidden; }
+  .tabla td { border-top: 1px solid var(--linea); padding: 9px 12px; vertical-align: top; } .tabla tr:first-child td { border-top: 0; }
+  .tabla td:first-child { font: 600 14px var(--mono); color: var(--terra-osc); white-space: nowrap; }
+</style>
 </head>
 <body>
 <main>
@@ -196,6 +206,28 @@ Instala esta skill y revisa que mi computador tenga todo lo que necesita para us
       <div class="ronda"><span class="n">6</span><div><b>Te muestra un borrador</b> rápido para revisar la historia y los tiempos.</div></div>
       <div class="ronda"><span class="n">7</span><div><b>Saca el video final</b> vertical, con subtítulos, efectos y cortes.</div></div>
     </div>
+  </section>
+
+  <section class="paso">
+    <div class="num">8</div>
+    <h2>Prompts para sketches <em>que venden</em></h2>
+    <p>Así nacen videos como la batalla de Claude contra ChatGPT. Pega uno en Claude Code y cambia lo que está entre corchetes:</p>
+    <div class="forma">
+      <h3><b>1</b>La batalla</h3>
+      <p>Tu negocio contra la forma vieja de hacerlo, en un ring, como Claude contra ChatGPT.</p>
+      <div class="term"><div class="barra"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>Claude Code</span></div><pre id="pv1">Haz un sketch de plastilina de 45 segundos: una pelea en un ring entre [tu negocio] y [la forma vieja de hacerlo], con un árbitro que narra 3 rounds sobre [3 problemas de tus clientes]. Cada round lo gana [tu negocio] con una respuesta corta y graciosa. Al final, el árbitro dice: “Comenta [PALABRA] y te mando [tu regalo]”. Tono sarcástico, para Instagram.</pre></div><button class="copiar" type="button" data-copiar-de="pv1">📋 Copiar</button>
+    </div>
+    <div class="forma">
+      <h3><b>2</b>El asistente que lo sabe todo</h3>
+      <p>Tu cliente ideal pregunta y la IA le responde con tu método.</p>
+      <div class="term"><div class="barra"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>Claude Code</span></div><pre id="pv2">Haz un sketch de plastilina de 40 segundos donde [tu cliente ideal] le pregunta a su asistente de IA: “[su problema]”. La IA le responde en 3 pasos cortos cómo lo resuelve [tu producto o servicio], con un chiste en cada paso y un remate al final. Cierra con: “Comenta [PALABRA] y te mando [tu regalo]”.</pre></div><button class="copiar" type="button" data-copiar-de="pv2">📋 Copiar</button>
+    </div>
+    <div class="forma">
+      <h3><b>3</b>El tutorial disfrazado</h3>
+      <p>Tres errores comunes y cómo corregirlos, con un chiste en cada uno.</p>
+      <div class="term"><div class="barra"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>Claude Code</span></div><pre id="pv3">Haz un sketch de plastilina de 45 segundos donde [personaje] comete 3 errores comunes de [tu tema] y su asistente de IA le enseña a corregirlos, con un chiste en cada uno. Cierra con: “Comenta [PALABRA] y te mando [tu regalo]”.</pre></div><button class="copiar" type="button" data-copiar-de="pv3">📋 Copiar</button>
+    </div>
+    <p class="nota">Usa personajes genéricos: nada de logos ni marcas reales.</p>
   </section>
 
   <section class="seccion">
